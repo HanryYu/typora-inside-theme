@@ -1,6 +1,6 @@
 # Typora-inside-theme
 
-[![](https://img.shields.io/badge/blog-%40hanry-red?style=flat-square)](https://blog.hanry.com)  ![GitHub stars](https://img.shields.io/github/stars/FishionYu/typora-inside-theme?style=flat-square)  ![GitHub](https://img.shields.io/github/license/FishionYu/typora-inside-theme?style=flat-square)  
+[![](https://img.shields.io/badge/blog-%40hanry-red?style=flat-square)](https://blog.hanry.top)  ![GitHub stars](https://img.shields.io/github/stars/FishionYu/typora-inside-theme?style=flat-square)  ![GitHub](https://img.shields.io/github/license/FishionYu/typora-inside-theme?style=flat-square)  
 
 > This is a typora theme inspired by a Hexo [inside](https://github.com/ikeq/hexo-theme-inside) theme.
 
