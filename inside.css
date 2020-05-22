@@ -279,7 +279,8 @@ video {
 
 img {
     max-width: 100%;
-    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 blockquote {
@@ -348,9 +349,13 @@ pre {
 }
 
 code {
+    font-size: .9em;
+    border: 1px solid #d0d0d0;
+    font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
     padding: .2em .4em;
-    border-radius: 3px
-}
+    border-radius: 3px;
+    background: #f7f7f7;
+    }
 
 pre {
     padding: .75rem 1rem;
@@ -736,13 +741,13 @@ textarea:focus {
     box-shadow: 1em 0 0 0 currentColor, -1em 0 0 0 currentColor
 }
 
-.φbi blockquote {
+blockquote {
     position: relative;
     margin: 2em 0;
     padding-left: 24px
 }
 
-.φbi blockquote:before {
+blockquote:before {
     position: absolute;
     left: 0;
     top: 0;
@@ -763,7 +768,7 @@ textarea:focus {
 }
 
 @media print {
-    .φbi blockquote {
+    blockquote {
         margin: 2em 1em;
         font-style: italic;
         color: #555
