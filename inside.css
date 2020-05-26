@@ -133,32 +133,12 @@
   }
 
   @font-face {
-    font-family: 'CascadiaMono';
-    font-style: normal;
-    src: local(''),
-         url('../Inside/CascadiaMono.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  }
-
-  @font-face {
-    font-family: 'CascadiaMonoPL';
-    font-style: normal;
-    src: local(''),
-         url('../Inside/CascadiaMonoPL.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  }
-
-  @font-face {
     font-family: 'CascadiaCode';
     font-style: normal;
     src: local(''),
          url('../Inside/CascadiaCode.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
   }
 
-  @font-face {
-    font-family: 'CascadiaCodePL';
-    font-style: normal;
-    src: local(''),
-         url('../Inside/CascadiaCodePL.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  }
 
 
 body,
@@ -279,8 +259,8 @@ video {
 
 img {
     max-width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
 
 blockquote {
@@ -376,6 +356,10 @@ pre code {
     color: inherit
 }
 
+li .mathjax-block, li p {
+    margin: .1rem 0;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 6px
@@ -424,182 +408,6 @@ textarea:focus {
     text-transform: none;
     font-style: normal;
     font-family: Icon
-}
-
-.icon-exit:before {
-    content: "\E928"
-}
-
-.icon-external:before {
-    content: "\E929"
-}
-
-.icon-check:before {
-    content: "\E92A"
-}
-
-.icon-circle:before {
-    content: "\E92B"
-}
-
-.icon-link:before {
-    content: "\E906"
-}
-
-.icon-at:before {
-    content: "\E927"
-}
-
-.icon-image:before {
-    content: "\E905"
-}
-
-.icon-loader:before {
-    content: "\E902"
-}
-
-.icon-author:before {
-    content: "\E900"
-}
-
-.icon-cate:before {
-    content: "\E901"
-}
-
-.icon-hash:before {
-    content: "\E903"
-}
-
-.icon-dot:before {
-    content: "\E904"
-}
-
-.icon-next:before {
-    content: "\E907"
-}
-
-.icon-previous:before {
-    content: "\E908"
-}
-
-.icon-down:before {
-    content: "\E909"
-}
-
-.icon-up:before {
-    content: "\E90A"
-}
-
-.icon-search:before {
-    content: "\E90B"
-}
-
-.icon-calendar:before {
-    content: "\E90C"
-}
-
-.icon-eye:before {
-    content: "\E90D"
-}
-
-.icon-clock:before {
-    content: "\E90E"
-}
-
-.icon-sidebar:before {
-    content: "\E926"
-}
-
-.icon-toc:before {
-    content: "\E925"
-}
-
-.icon-wechat:before {
-    content: "\E91C"
-}
-
-.icon-paypal:before {
-    content: "\E919"
-}
-
-.icon-bitcoin:before {
-    content: "\E91B"
-}
-
-.icon-soundcloud:before {
-    content: "\E90F"
-}
-
-.icon-pinterest:before {
-    content: "\E91A"
-}
-
-.icon-youtube:before {
-    content: "\E916"
-}
-
-.icon-tumblr:before {
-    content: "\E914"
-}
-
-.icon-linkedin:before {
-    content: "\E915"
-}
-
-.icon-myspace:before {
-    content: "\E917"
-}
-
-.icon-disqus:before {
-    content: "\E918"
-}
-
-.icon-hangouts:before {
-    content: "\E910"
-}
-
-.icon-email:before {
-    content: "\E911"
-}
-
-.icon-facebook:before {
-    content: "\E912"
-}
-
-.icon-dribbble:before {
-    content: "\E913"
-}
-
-.icon-telegram:before {
-    content: "\E91D"
-}
-
-.icon-qq:before {
-    content: "\E91E"
-}
-
-.icon-instagram:before {
-    content: "\E91F"
-}
-
-.icon-weibo:before {
-    content: "\E920"
-}
-
-.icon-googleplus:before {
-    content: "\E921"
-}
-
-.icon-feed:before {
-    content: "\E922"
-}
-
-.icon-twitter:before {
-    content: "\E923"
-}
-
-.icon-github:before {
-    content: "\E924"
 }
 
 .φbl {
