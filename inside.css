@@ -140,6 +140,150 @@
   }
 
 
+#write {
+    max-width: 600px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre {
+    width: auto;
+  }
+  
+  #write h1::before, #write h2::before, #write h3::before, #write h4::before, #write h5::before, #write h6::before {
+    position: absolute;
+    right: calc(100% + 10px);
+    bottom: 0;
+    color: #b4b4b4;
+    font-size: 1rem;
+    font-weight: bold;
+    font-variant: 'small-caps';
+    border: 0;
+    border-radius: 0;
+    left: auto;
+    float: none;
+    padding: 0;
+    vertical-align: baseline;
+    line-height: 2;
+  }
+
+#write h1 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  
+#write h1::before {
+    content: 'H1';
+    bottom: .45rem;
+  }
+  
+#write h2 {
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 2;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  
+#write h2::before {
+    content: 'H2';
+    bottom: .2rem;
+  }
+  
+#write h3 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 2;
+    font-style: normal;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  
+#write h3::before {
+    content: 'H3';
+    bottom: .18rem;
+  }
+  
+#write h4 {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 2;
+    font-style: normal;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  
+#write h4::before {
+    content: 'H4';
+    bottom: .15rem;
+  }
+  
+#write h5, #write h6 {
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 2;
+    font-style: normal;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  
+#write h5::before, #write h6::before {
+    bottom: .1rem;
+  }
+  
+#write h5::before {
+    content: 'H5';
+  }
+  
+#write h6::before {
+    content: 'H6';
+  }
+
+#write strong {
+    
+    font-weight: 900;
+    padding: 0 1px;
+  }
+
+
+#write ol > li, #write ul > li {
+    color: #db4d52;
+  }
+
+#write ol > li > *, #write ul > li > * {
+    color: #333;
+  }
+
+#write ol > li > *:not(ol):not(ul), #write ul > li > *:not(ol):not(ul) {
+    padding-left: .25rem;
+  }
+
+
+
+#write ul>li>ul>li {
+    list-style-type: circle;
+}
+
+#write ul>li>ul>li>ul>li {
+    list-style-type: square;
+}
 
 body,
 html {
@@ -183,7 +327,7 @@ p {
     font-size: 14px;
     font-family: "Josefin Sans", "Noto Sans SC", -apple-system, sans-serif;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 2;
     font-style: normal;
     color: #363636;
 }
@@ -191,7 +335,7 @@ p {
 h1 {
     font-size: 25px;
     font-style: normal;
-    line-height: 37px;
+    line-height: 2;
     font-weight: 900;
     color: #363636;
     margin-top: 2em;
@@ -202,7 +346,7 @@ h2 {
     font-size: 20px;
     font-style: normal;
     font-weight: 900;
-    line-height: 30px;
+    line-height: 2;
     color: #363636;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -211,7 +355,7 @@ h2 {
 h3 {
     font-size: 18px;
     font-weight: 900;
-    line-height: 27px;
+    line-height: 2;
     font-style: normal;
     color: #363636;
     margin-top: 2em;
@@ -221,7 +365,7 @@ h3 {
 h4 {
     font-size: 16px;
     font-weight: 900;
-    line-height: 24px;
+    line-height: 2;
     font-style: normal;
     color: #363636;
     margin-top: 2em;
@@ -232,7 +376,7 @@ h5,
 h6 {
     font-size: 14px;
     font-weight: 900;
-    line-height: 21px;
+    line-height: 2;
     font-style: normal;
     color: #363636;
     margin-top: 2em;
@@ -241,7 +385,8 @@ h6 {
 
 a {
     color: #357BB3;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
     cursor: pointer
 }
 
@@ -329,12 +474,13 @@ pre {
 }
 
 code {
-    font-size: .9em;
-    border: 1px solid #d0d0d0;
+    font-size: .9em; 
+    color: #333333; /*  #537AA2;  */
+/*    border: 1px solid #d0d0d0;  */
     font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
-    padding: .2em .4em;
-    border-radius: 3px;
-    background: #f7f7f7;
+    padding: .3em .3em;
+    border-radius: 5px;
+    background: #F3F4F4; /* #F7F7F7 #F3F4F4 #F5F7FA*/
     }
 
 pre {
@@ -595,7 +741,8 @@ ul>li>ul>li>ul>li {
 
 ol,
 ul {
-    padding-left: 2em
+    padding-left: 2em;
+    line-height: 2;
 }
 
 ol>li {
@@ -2782,150 +2929,6 @@ cl {
     }
 }
 
-#write {
-    max-width: 600px;
-  	margin: 0 auto;
-  	padding: 30px;
-    padding-bottom: 100px;
-}
-
-#write pre.md-meta-block {
-	padding: 1rem;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #f7f7f7;
-    border: 0;
-    border-radius: 3px;
-    color: #777777;
-    margin-top: 0 !important;
-}
-
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre {
-    width: auto;
-  }
-  
-  #write h1::before, #write h2::before, #write h3::before, #write h4::before, #write h5::before, #write h6::before {
-    position: absolute;
-    right: calc(100% + 10px);
-    bottom: 0;
-    color: #b4b4b4;
-    font-size: 1rem;
-    font-weight: bold;
-    font-variant: 'small-caps';
-    border: 0;
-    border-radius: 0;
-    left: auto;
-    float: none;
-    padding: 0;
-    vertical-align: baseline;
-    line-height: 20px;
-  }
-
-#write h1 {
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 37px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-  
-#write h1::before {
-    content: 'H1';
-    bottom: .45rem;
-  }
-  
-#write h2 {
-    font-size: 20px;
-    font-weight: 900;
-    font-style: normal;
-    line-height: 30px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-  
-#write h2::before {
-    content: 'H2';
-    bottom: .2rem;
-  }
-  
-#write h3 {
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 27px;
-    font-style: normal;
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-  
-#write h3::before {
-    content: 'H3';
-    bottom: .18rem;
-  }
-  
-#write h4 {
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 24px;
-    font-style: normal;
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-  
-#write h4::before {
-    content: 'H4';
-    bottom: .15rem;
-  }
-  
-#write h5, #write h6 {
-    font-size: 14px;
-    font-weight: 900;
-    line-height: 21px;
-    font-style: normal;
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-  
-#write h5::before, #write h6::before {
-    bottom: .1rem;
-  }
-  
-#write h5::before {
-    content: 'H5';
-  }
-  
-#write h6::before {
-    content: 'H6';
-  }
-
-#write strong {
-    
-    font-weight: 900;
-    padding: 0 1px;
-  }
-
-
-#write ol > li, #write ul > li {
-    color: #db4d52;
-  }
-
-#write ol > li > *, #write ul > li > * {
-    color: #333;
-  }
-
-#write ol > li > *:not(ol):not(ul), #write ul > li > *:not(ol):not(ul) {
-    padding-left: .25rem;
-  }
-
-
-
-#write ul>li>ul>li {
-    list-style-type: circle;
-}
-
-#write ul>li>ul>li>ul>li {
-    list-style-type: square;
-}
 
 .md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
     background: #e8f2ff;
