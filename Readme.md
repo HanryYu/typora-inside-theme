@@ -15,9 +15,11 @@
 
 # Plan
 
--  Bug fix
--  Add dark theme
--  Add a bigger font size version
+- [ ] Bug fix
+
+- [ ] Add dark theme
+
+- [ ] Add a bigger font size version
 
 # Screenshot
 
