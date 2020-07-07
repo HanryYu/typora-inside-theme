@@ -8,7 +8,7 @@
 
 # Install
 
-1. Download this zip from Github, extract this file, then you can get the `Inside` folder and `inside.css` .
+1. Download [this](https://github.com/FishionYu/typora-inside-theme/releases/latest) zip from Github, extract this file, then you can get the `Inside` folder and `inside.css` .
 2. Open typora, click `Preference` → `Apperance` → `Open Theme Folder `.
 3. Put `Inside` folder and `inside.css` into the open folder.
 4. Close Typora totally, reopen Typora and select `Theme` → `inside` from the menu bar.
@@ -26,3 +26,4 @@
 ![](https://cdn.jsdelivr.net/gh/FishionYu/Rayyu-sPic@master/img/transJJYTdA.png)
 
 ![](https://cdn.jsdelivr.net/gh/FishionYu/Rayyu-sPic@master/img/trans1aGQwy.png)
+
