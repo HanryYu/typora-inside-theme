@@ -184,7 +184,7 @@ stars: 362
 For the lastest ES grammar and code minification.
 Run the following command in the root directory of Hexo (not `themes/inside`):
 
-```
+```sh
 npm install babel-core babel-preset-env html-minifier terser --save
 ```
 
