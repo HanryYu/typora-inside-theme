@@ -133,10 +133,10 @@
   }
 
   @font-face {
-    font-family: 'CascadiaCode';
+    font-family: 'Cascadia Code';
     font-style: normal;
-    src: local(''),
-         url('./Inside/CascadiaCode.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    src: local('Cascadia Code'), local('CascadiaCode'),
+         url('./Inside/CascadiaCode.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
   }
 
 
@@ -481,7 +481,7 @@ code {
     padding: .3em .3em;
     border-radius: 5px;
     background: #F3F4F4; /* #F7F7F7 #F3F4F4 #F5F7FA*/
-    }
+}
 
 pre {
     padding: .75rem 1rem;
