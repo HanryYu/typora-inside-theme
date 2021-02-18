@@ -278,11 +278,11 @@
 
 
 #write ul>li>ul>li {
-    list-style-type: circle;
+    /*list-style-type: circle;*/
 }
 
 #write ul>li>ul>li>ul>li {
-    list-style-type: square;
+    /*list-style-type: square;*/
 }
 
 body,
