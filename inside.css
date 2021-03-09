@@ -142,13 +142,13 @@
 
 #write {
     max-width: 600px;
-  	margin: 0 auto;
-  	padding: 30px;
+    margin: 0 auto;
+    padding: 30px;
     padding-bottom: 100px;
 }
 
 #write pre.md-meta-block {
-	padding: 1rem;
+    padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
     background-color: #f7f7f7;
@@ -216,6 +216,7 @@
     margin-bottom: 14px;
   }
   
+
 #write h3::before {
     content: 'H3';
     bottom: .18rem;
@@ -278,11 +279,11 @@
 
 
 #write ul>li>ul>li {
-    list-style-type: circle;
+    /*list-style-type: circle;*/
 }
 
 #write ul>li>ul>li>ul>li {
-    list-style-type: square;
+    /*list-style-type: square;*/
 }
 
 body,
@@ -322,6 +323,7 @@ body {
         color: #000 !important
     }
 }
+
 
 p {
     font-size: 14px;
@@ -755,6 +757,15 @@ ol>li>ol>li {
 
 ol>li>ol>li>ol>li {
     list-style-type: lower-roman
+}
+
+.md-task-list-item>input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -1.2em;
+    margin-top: 0.46em;
+    border: none;
 }
 
 .φbi a {
